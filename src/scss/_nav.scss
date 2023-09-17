@@ -1,0 +1,38 @@
+/* start nav  */
+@use "./mixin" as *;
+.navbar{
+    background-color: var(--color-base)!important;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: 0 0 0 1px white;
+  }
+  .nav-link:focus, .nav-link:hover{
+    color: var(--color-brand);
+   }
+   .navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+   }
+   .navbar .nav-link:focus,.navbar .nav-link:hover,.navbar .nav-link.active{
+    color: var(--color-brand);
+   }
+   
+
+   @media(min-width:992px){
+    .navbar{
+      min-height: 100vh;
+      width: var(--sidbar-width);
+      background: linear-gradient(#033f4776, #033f4729),url(@/assets/sidebar-img.jpg);
+      background-size: cover;
+      background-position: center;
+  
+    }
+    .navbar-brand img{
+      border: 8px solid var(--color-brand);
+    }
+    .content-wrapper{
+      padding-left: var(--sidbar-width);
+    }
+  }

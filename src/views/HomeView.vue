@@ -91,7 +91,7 @@
               <div class="d-flex align-items-center">
                 <a
                   href="#work"
-                  class="btn-brand btn cursive me-3 text-left"
+                  class="btn-brand btn me-3 text-left"
                   data-aos="fade-up"
                   data-aos-delay="150"
                 >
@@ -99,7 +99,7 @@
                 </a>
                 <a
                   href="#home"
-                  class="link-custom mobile p-relative cursive"
+                  class="link-custom mobile p-relative"
                   data-aos="fade-up"
                   data-aos-delay="200"
                   >{{ $t("home.call") }}</a
@@ -519,18 +519,6 @@ export default {
   data() {
     return {
       lol: "true",
-      // experiences: [
-      //     {
-      //         title: this.$i18n.t("about.freelance"),
-      //         source: "Fiverr",
-      //         text: "In 2022, I freelanced on various platforms like Fiverr, assisting clients with their web development projects. I provided expertise in HTML, CSS, JavaScript, Vue.js, and UI/UX design to deliver high-quality solutions tailored to their needs.",
-      //     },
-      //     {
-      //         title: this.$i18n.t("about.internship"),
-      //         source: "Innovation and Technology Transfer Center(2-month internship in 2023)",
-      //         text: "I had the opportunity to develop a web application from scratch. I received an excellent grade for my work, which involved creating a dynamic and efficient web solution to digitize the infrastructure.",
-      //     },
-      // ],
     };
   },
   methods: {

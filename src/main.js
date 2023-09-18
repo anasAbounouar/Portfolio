@@ -14,14 +14,12 @@ const messages = {
   en: enLocale,
   fr: frLocale,
 };
-
 const i18n = createI18n({
   // Use createI18n to create the i18n instance
   locale: "en",
   fallbackLocale: "en",
   messages,
 });
-
 import "./scss/main.scss";
 import "./scss/all.min.css";
 import "aos/dist/aos.css";
@@ -39,9 +37,7 @@ app.mixin({
     });
   },
 });
-
 app.use(router);
 app.use(store);
 app.use(i18n);
-
 app.mount("#app");

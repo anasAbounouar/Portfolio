@@ -338,7 +338,7 @@ footer  i:hover {
 }
 #gtx-trans {
     position: absolute;
-    left: auto; /* Remove the left property */
+    left: 0px!important; /* Remove the left property */
     /* top: 88.4271px; */ /* You can also remove the top property if you want */
   }
   

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container flex-lg-column">
         <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">

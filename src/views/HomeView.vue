@@ -39,9 +39,13 @@
               </label>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">{{
-                $t("navbar.home")
-              }}</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+                @click="closeNavbar"
+                >{{ $t("navbar.home") }}</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services" @click="closeNavbar">{{

@@ -78,3 +78,36 @@
     </nav>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      lol: "true",
+    };
+  },
+  methods: {
+    switchLanguage(locale) {
+      this.$i18n.locale = locale;
+    },
+    closeNavbar() {
+      // Check if the navigation bar is open (for smaller screens)
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      if (
+        navbarToggler &&
+        window.getComputedStyle(navbarToggler).display !== "none"
+      ) {
+        // If it's open, programmatically click the toggle button to close it
+        navbarToggler.click();
+      }
+    },
+    updateLang() {
+      this.lol === true ? this.switchLanguage("en") : this.switchLanguage("fr");
+    },
+  },
+  watch: {
+    lol() {
+      this.updateLang();
+    },
+  },
+};
+</script>
